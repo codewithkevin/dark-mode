@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Light / Dark Mode Toggle</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <header class="header">
+        <a href="#" class="logo">
+            <h1><label for="logo">LOGO</label></h1>
+        </a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+    </header>
+    <!--END SECTION-->    
+
+    <!--Hero Section-->
+    <section class="home">
+        <div id="content" class="content">
+            <h3>WELCOME <br>CREATIVE ART <br>WORK</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto illo consectetur aliquam possimus impedit adipisci quod magnam eius. Id, aperiam quod perferendis maiores suscipit veritatis nostrum mollitia eos dolorum?</P>
+            <button type="button" onclick="changeMode()">DARK ME</button>
+        </div>
+
+    </section>
+
+    <script>
+        
+      function changeMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+
+      }
+    </script>
+  </body>
+</html>
